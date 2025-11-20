@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/JP Environmental Asset Pack/Scenes/ForestExample.unity
+- path: Assets/Scenes/Jamari.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

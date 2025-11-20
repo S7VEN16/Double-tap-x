@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
 	"process_id" : 22898,
+=======
+	"process_id" : 39155,
+>>>>>>> 69acf678c0fac33a41487c284db16be6d41352d7
 	"version" : "2020.3.27f1",
 	"app_path" : "/Applications/2020.3.27f1/Unity.app",
 	"app_contents_path" : "/Applications/2020.3.27f1/Unity.app/Contents"
