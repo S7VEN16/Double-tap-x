@@ -9,27 +9,39 @@ public class FrogMovement : MonoBehaviour
     private Rigidbody rb;           // Reference to Rigidbody2D
 
       public float timeLeft = 3f;   // starting time in seconds
+
+      Transform player;
     
 
     void Start()
     {
+         player = GameObject.FindGameObjectWithTag("Player").transform;
         rb = GetComponent<Rigidbody>();
     }
 
     void Update()
     {
-         timeLeft -= Time.deltaTime;
+        Vector3 targetPosition = player.position;
+        targetPosition.y = transform.position.y;  // keep frog upright
 
-        if (timeLeft < 0)
-        {
-            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
-            rb.velocity = new Vector2(2 * speed, rb.velocity.y);
-            timeLeft = 3f;
-        }
+        transform.LookAt(targetPosition);
+
+         timeLeft -= Time.deltaTime;
+        
+
+         transform.position = Vector3.MoveTowards(transform.position, player.position, speed * Time.deltaTime);
+
+        // if (timeLeft < 0)
+        // {
+        //     rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+        //     rb.velocity = new Vector2(2 * speed, rb.velocity.y);
+        //     timeLeft = 3f;
+        // }
             
         
         
 
         
     }
+
 }

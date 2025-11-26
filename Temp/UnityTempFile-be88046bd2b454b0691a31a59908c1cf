@@ -315,5 +315,8 @@
 /define:UNITY_STANDALONE_OSX
 /define:UNITY_TEAM_LICENSE
 /define:USE_SEARCH_ENGINE_API
-"Assets/Scripts/NewBehaviourScript.cs"
+"Assets/Art/Pause menu script.cs"
+"Assets/Art/Scene Loader.cs"
+"Assets/CameraFollow.cs"
+"Assets/Scripts/FrogMovement.cs"
 "Assets/Scripts/RollingBallController.cs"
