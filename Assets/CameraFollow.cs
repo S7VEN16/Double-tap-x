@@ -5,6 +5,8 @@ using UnityEngine;
 public class CameraFollow : MonoBehaviour
 {
 
+   
+
     // The target object (usually the player) the camera will follow
     public Transform target;
 
